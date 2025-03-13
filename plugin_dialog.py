@@ -4,7 +4,7 @@ from qgis.PyQt.QtWidgets import QDialog
 
 FORM_CLASS, _ = uic.loadUiType(os.path.join(os.path.dirname(__file__), 'ui', 'dialog.ui'))
 
-class InvertDialog(QDialog):
+class InvertDialog(QDialog, FORM_CLASS):
 
     def __init__(self, parent=None):
         super(InvertDialog, self).__init__(parent)
